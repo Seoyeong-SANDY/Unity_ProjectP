@@ -8,6 +8,8 @@ public class UI_Play : MonoBehaviour
     [SerializeField]
     GameObject HpSlider;
 
+    int maxHP = QueenController._hp;
+
     void Start()
     {
         Slider _hpSlider = HpSlider.GetComponent<Slider>();

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class QueenController : MonoBehaviour
 {
-    int _hp = 30;
+    public static int _hp = 30;
 
     void Start()
     {
