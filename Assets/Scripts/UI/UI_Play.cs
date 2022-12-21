@@ -5,19 +5,23 @@ using UnityEngine.UI;
 
 public class UI_Play : MonoBehaviour
 {
-    [SerializeField]
-    GameObject HpSlider;
+    public GameObject HpSlider;
+    public GameObject ScoreText;
 
-    int maxHP = QueenController._hp;
+    Slider _hpSlider;
+    Text _scoreText;
 
     void Start()
     {
-        Slider _hpSlider = HpSlider.GetComponent<Slider>();
+        _hpSlider = HpSlider.GetComponent<Slider>();
+        _hpSlider.maxValue = 30;
 
+        _scoreText = ScoreText.GetComponent<Text>();
     }
 
     void Update()
     {
-        
+        _hpSlider.value = (float)QueenController._hp;
+        _scoreText.text = QueenController._score.ToString("N0");
     }
 }

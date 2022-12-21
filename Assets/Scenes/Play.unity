@@ -446,6 +446,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HpSlider: {fileID: 113089601}
+  ScoreText: {fileID: 1551239790}
 --- !u!1 &1098664280
 GameObject:
   m_ObjectHideFlags: 0
@@ -558,6 +559,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db2d2fc3107bb4c47a1d8a57926fd950, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _maxHp: 30
 --- !u!1 &1125166869
 GameObject:
   m_ObjectHideFlags: 0
@@ -737,7 +739,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1278461041}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.23228674, y: 0.9787374, z: 0}
+  m_LocalPosition: {x: 0.05, y: 5.47, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
