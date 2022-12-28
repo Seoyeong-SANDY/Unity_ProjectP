@@ -18,6 +18,10 @@ public class QueenController : MonoBehaviour
     {
         _score += Time.fixedDeltaTime;
         _hp -= Time.fixedDeltaTime;
+        if (_hp <= 0)
+        {
+            GameOver();
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -27,5 +31,12 @@ public class QueenController : MonoBehaviour
             _hp -= 10;
             Debug.Log($"{_hp}");
         }
+    }
+
+    void GameOver()
+    {
+        Time.timeScale = 0.0f;
+        // UI_EndPopup 
+        // 
     }
 }
